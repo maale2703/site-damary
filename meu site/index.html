@@ -1,0 +1,147 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Dicas de Beleza & Maquiagem</title>
+
+  <!-- LINK DO CSS -->
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <header>
+    <div class="container">
+      <nav>
+        <a class="brand" href="#">Beleza & Glow</a>
+        <div class="nav-links">
+          <a href="#dicas">Dicas</a>
+          <a href="#indicacoes">Indicações</a>
+          <a href="#tutoriais">Tutoriais</a>
+          <a href="#contato">Contato</a>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+
+    <!-- HERO -->
+    <section class="hero">
+      <div class="hero-card">
+        <h1>Dicas rápidas de beleza & maquiagem</h1>
+        <p>Produtos testados e truques simples para deixar sua make perfeita.</p>
+
+        <div class="search">
+          <input placeholder="Buscar dicas...">
+          <button>Buscar</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- DICAS -->
+    <section id="dicas">
+      <h2>Dicas essenciais</h2>
+      <div class="grid">
+        <div class="card">
+          <img src="https://source.unsplash.com/featured/?makeup-primer" alt="">
+          <h3>Use primer</h3>
+          <p class="muted">Ajuda a base durar mais e deixa a pele lisinha.</p>
+        </div>
+
+        <div class="card">
+          <img src="https://source.unsplash.com/featured/?concealer" alt="">
+          <h3>Corretivo certo</h3>
+          <p class="muted">Use em triângulo invertido para iluminar.</p>
+        </div>
+
+        <div class="card">
+          <img src="https://source.unsplash.com/featured/?setting-spray" alt="">
+          <h3>Use fixador</h3>
+          <p class="muted">Mantém a maquiagem bonita o dia todo.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- INDICAÇÕES -->
+    <section id="indicacoes">
+      <h2>Indicações de maquiagem</h2>
+      <div class="product-grid">
+
+        <div class="product">
+          <img src="https://source.unsplash.com/featured/?foundation" alt="">
+          <div class="info">
+            <strong>Base Glow</strong>
+            <div class="muted">Leve e luminosa</div>
+            <div class="price">R$ 69,90</div>
+            <div class="btns">
+              <button class="btn-primary">Comprar</button>
+              <button class="btn-outline" onclick="addFav(this)">Favoritar</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="product">
+          <img src="https://source.unsplash.com/featured/?mascara" alt="">
+          <div class="info">
+            <strong>Máscara Volume X</strong>
+            <div class="muted">Volume e definição</div>
+            <div class="price">R$ 42,90</div>
+            <div class="btns">
+              <button class="btn-primary">Comprar</button>
+              <button class="btn-outline" onclick="addFav(this)">Favoritar</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="product">
+          <img src="https://source.unsplash.com/featured/?blush" alt="">
+          <div class="info">
+            <strong>Blush Cremoso</strong>
+            <div class="muted">Natural e leve</div>
+            <div class="price">R$ 34,90</div>
+            <div class="btns">
+              <button class="btn-primary">Comprar</button>
+              <button class="btn-outline" onclick="addFav(this)">Favoritar</button>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- TUTORIAIS -->
+    <section id="tutoriais">
+      <h2>Tutoriais</h2>
+
+      <div class="video-wrap">
+        <iframe src="https://www.youtube.com/embed/VIDEO_ID" allowfullscreen></iframe>
+      </div>
+
+    </section>
+
+    <!-- CONTATO -->
+    <section id="contato">
+      <h2>Contato</h2>
+
+      <form onsubmit="sendContact(event)">
+        <input id="name" placeholder="Seu nome" required>
+        <input id="email" placeholder="Seu e-mail" required>
+        <textarea id="message" placeholder="Mensagem" required></textarea>
+
+        <button class="btn-primary">Enviar</button>
+      </form>
+
+    </section>
+
+  </main>
+
+  <!-- RODAPÉ -->
+  <footer>
+    <p>© <span id="year"></span> Beleza & Glow — Todos os direitos reservados.</p>
+  </footer>
+
+  <!-- SCRIPT -->
+  <script src="script.js"></script>
+</body>
+</html>
